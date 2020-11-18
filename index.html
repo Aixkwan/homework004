@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/base.css">
+</head>
+<body>
+    
+    <h1>因为git的分支必须指向一个commit，没有任何commit就没有任何分支
+        提交第一个commit后git自动创建master分支” </h1>
+    <h1>提交（git commit）一次后，后面新建的分支不管有没有再用该新分支提交数据，git branch都会显示</h1>
+
+    <h3>创建xiaoming xiaohong其他两个分支</h3>
+    <h3>提交到远程git仓库才能用
+        git branch 查看到分支(远程分支)
+        git branch -a 可查看到创建后但没提交到远程git仓库的本地分支
+    </h3>
+
+    <h2>如果要将其他分支合并到主分支上</h2>
+    <h2>那就先切换到主分支上  再  git merge ***(分支名) </h2>
+    <h2>将相应的分支合并到主分支上</h2>
+    <h2>然后在主分支上提交文件到远程git仓库才会在远程git仓库上显示合并过来的项目文件(相当于更新)</h2>
+
+    <h1>相当于每个组员有对应的分支(可直接在远程git仓库上创建)</h1>
+    <h1>也可以通过命令面板创建(git branch checkout -b 分支名) 但需在此分支上提交文件到远程git仓库才能被查询到</h1>
+    <h1>每个组员有对应的分支和自己分支上的项目文件</h1>
+    <script>
+        var ce=function(tagName){
+            return document.createElement(tagName);
+        }
+        document.body.appendChild(ce("div"));
+    </script>
+</body>
+</html>
